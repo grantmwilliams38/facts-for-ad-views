@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NavbarWithSearch from './NavbarWithSearch';
 import { Routes, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const celebrityList = [
   'Michael Jackson',
@@ -30,7 +31,10 @@ function HomePage() {
 function Page(celebrity) {
   return (
     <div>
-      <title>{celebrity}</title>
+      <Helmet>
+        <meta charSet="utf-8"></meta>
+        <title>{celebrity}</title>
+      </Helmet>
       <h1>{celebrity}</h1>
     </div>
   )
