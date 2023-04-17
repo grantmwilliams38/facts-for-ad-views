@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import NavbarWithSearch from './NavbarWithSearch';
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+
+const MichaelJackson = lazy(() => (import('./Pages/MichaelJackson')))
 
 const celebrityList = [
   'Michael Jackson',
@@ -9,6 +11,10 @@ const celebrityList = [
   'Michael Tyson',
   'Kobe Bryant'
 ];
+
+const celebrityPageMap = {
+  'Michael Jackson': <MichaelJackson/>
+}
 
 function NotFoundPage(){
   return (
@@ -35,7 +41,9 @@ function Page(celebrity) {
         <meta charSet="utf-8"></meta>
         <title>{celebrity}</title>
       </Helmet>
-      <h1>{celebrity}</h1>
+      <Suspense fallback={<div><h1>Loading</h1></div>}>
+        {celebrityPageMap[celebrity]}
+      </Suspense>
     </div>
   )
 }
