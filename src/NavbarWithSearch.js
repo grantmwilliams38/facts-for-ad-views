@@ -36,7 +36,7 @@ function NavbarWithSearch(props) {
         <Container fluid>
           <Navbar.Brand onClick={() => handleCelebrityClick('')}>
             <img
-              alt=""
+              alt="Get to know logo"
               src={require("./images/util/trending-up.png")}
               width="30"
               height="30"
