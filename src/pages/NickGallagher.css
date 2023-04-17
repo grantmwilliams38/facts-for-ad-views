@@ -1,0 +1,71 @@
+/* General styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  width: 95%;
+}
+
+h1 {
+  margin: 1em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #0645AD;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page-image {
+  margin-left: 3%;
+  max-height: 500px;
+}
+
+/* Section styles */
+section {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f5f5f5;
+  padding: 1em;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.8em;
+  color: #999;
+}

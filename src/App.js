@@ -3,17 +3,17 @@ import NavbarWithSearch from './NavbarWithSearch';
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-const MichaelJackson = lazy(() => (import('./pages/MichaelJackson')))
+const NickGallagher = lazy(() => (import('./pages/NickGallagher')))
+const ZackGallagher = lazy(() => (import('./pages/ZackGallagher')))
 
 const celebrityList = [
-  'Michael Jackson',
-  'Michael Jordan',
-  'Michael Tyson',
-  'Kobe Bryant'
+  'Nick Gallagher',
+  'Zack Gallagher'
 ];
 
 const celebrityPageMap = {
-  'Michael Jackson': <MichaelJackson/>
+  'Nick Gallagher': <NickGallagher/>,
+  'Zack Gallagher': <ZackGallagher/>
 }
 
 function NotFoundPage(){
@@ -56,6 +56,7 @@ function App() {
       <header>
         <NavbarWithSearch activePage={activePage} setActivePage={setActivePage} celebrityList={celebrityList}/>
       </header>
+      <hr/>
       <main className="main">
         <Routes>
           <Route index element={HomePage()} />
