@@ -5,12 +5,13 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function NavbarWithSearch(props) {
   const [matchingCelebrities, setMatchingCelebrities] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleSearchChange = (event) => {
     const query = event.target.value.toLowerCase();
@@ -42,7 +43,7 @@ function NavbarWithSearch(props) {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-            Get to know {props.activePage}
+            Get to know {location.pathname.replace("/", "").replace("%20", " ")}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
