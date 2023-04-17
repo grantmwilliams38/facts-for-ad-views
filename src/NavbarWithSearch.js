@@ -34,7 +34,16 @@ function NavbarWithSearch(props) {
     <div>
       <Navbar bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand onClick={() => handleCelebrityClick('')}>Facts for ad views</Navbar.Brand>
+          <Navbar.Brand onClick={() => handleCelebrityClick('')}>
+            <img
+              alt=""
+              src={require("./images/util/trending-up.png")}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            Get to know {props.activePage}
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav

@@ -3,7 +3,7 @@ import NavbarWithSearch from './NavbarWithSearch';
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-const MichaelJackson = lazy(() => (import('./Pages/MichaelJackson')))
+const MichaelJackson = lazy(() => (import('./pages/MichaelJackson')))
 
 const celebrityList = [
   'Michael Jackson',
@@ -38,8 +38,8 @@ function Page(celebrity) {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8"></meta>
-        <title>{celebrity}</title>
+        <meta name="description" content={"Get to know " + celebrity + ". Some facts and some insight at a glance."}/>
+        <title>Get to know {celebrity}</title>
       </Helmet>
       <Suspense fallback={<div><h1>Loading</h1></div>}>
         {celebrityPageMap[celebrity]}
