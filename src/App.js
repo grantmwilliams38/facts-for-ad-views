@@ -56,7 +56,6 @@ function App() {
       <header>
         <NavbarWithSearch activePage={activePage} setActivePage={setActivePage} celebrityList={celebrityList}/>
       </header>
-      <hr/>
       <main className="main">
         <Routes>
           <Route index element={HomePage()} />
