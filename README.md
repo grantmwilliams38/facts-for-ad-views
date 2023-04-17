@@ -1,3 +1,1 @@
-# Facts for ad views
-
-In progress
+# Let's get some Google AdSense!
