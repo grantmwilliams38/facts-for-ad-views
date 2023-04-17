@@ -12,11 +12,11 @@ const celebrityList = [
 ];
 
 const celebrityPageMap = {
-  'Nick Gallagher': <NickGallagher/>,
-  'Zack Gallagher': <ZackGallagher/>
+  'Nick Gallagher': <NickGallagher />,
+  'Zack Gallagher': <ZackGallagher />
 }
 
-function NotFoundPage(){
+function NotFoundPage() {
   return (
     <div>
       <title>Not Found Page</title>
@@ -38,7 +38,7 @@ function Page(celebrity) {
   return (
     <div>
       <Helmet>
-        <meta name="description" content={"Get to know " + celebrity + ". Some facts and some insight at a glance."}/>
+        <meta name="description" content={"Get to know " + celebrity + ". Some facts and some insight at a glance."} />
         <title>Get to know {celebrity}</title>
       </Helmet>
       <Suspense fallback={<div><h1>Loading</h1></div>}>
@@ -54,7 +54,7 @@ function App() {
   return (
     <div>
       <header>
-        <NavbarWithSearch activePage={activePage} setActivePage={setActivePage} celebrityList={celebrityList}/>
+        <NavbarWithSearch activePage={activePage} setActivePage={setActivePage} celebrityList={celebrityList} />
       </header>
       <main className="main">
         <Routes>

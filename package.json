@@ -1,7 +1,7 @@
 {
   "name": "facts-for-ad-views",
   "version": "0.1.0",
-  "homepage": "https://grantmwilliams38.github.io",
+  "homepage": "https://grantmwilliams38.github.io/#",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

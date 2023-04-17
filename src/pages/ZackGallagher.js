@@ -16,7 +16,7 @@ const ZackGallagher = () => {
         <h2>Accomplishments</h2>
         <img className="page-image" src="https://i.ytimg.com/vi/srjrfE7opoI/maxresdefault.jpg" alt="Zack Gallagher competing in the 2023 Battle at the Border" />
         <p>One of Gallagher's biggest accomplishments is winning Battle at the Border (BATB) in 2023, which helped him gain recognition as one of the best kendama players in the world.</p>
-        <p>Gallagher also taught kendama prodigy Grant Williams</p>
+        <p>Gallagher also taught kendama prodigy Grant Williams!</p>
       </section>
       <section className="App-section">
         <h2>Contributions to the Kendama Community</h2>
